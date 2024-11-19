@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Familjen Grotesk", sans-serif;
+    
+    
+}
+
+:root{
+    --cor-primaria: #ffffff;
+
+}
+
+body{
+
+    padding: 1.75rem 1rem;
+}
+
+.header-mobile{
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    background-color: #ffffff
+    
+    
+} 
+.header-mobile img {
+    border: none;
+    background: none;
+    width: 5rem;
+    height: auto;
+    display: block;
+
+}
+
+.header-mobile button{
+    border: none;
+    background: none;
+
+
+}

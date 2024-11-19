@@ -1,6 +1,0 @@
-
-Gerar arquivo único de ID Calls de metadados:
-python aut_metadados.py
-
-Gerar lista de áudios no storage:
-Get-ChildItem -Path "\\192.168.0.201\backup2\olos\storage\chamadas\2024\11\01" -Filter "*.mp3" | Select-Object -ExpandProperty Name | Out-File -FilePath "C:\Users\marcos.silva\Desktop\metadados\MetadadosGerados.txt"
