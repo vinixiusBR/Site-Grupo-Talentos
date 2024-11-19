@@ -9,6 +9,8 @@
 
 :root{
     --cor-primaria: #ffffff;
+    --cor-secundaria: #00A7EF;
+    --cor-tercearia: #EAEAEA;
 
 }
 
@@ -40,6 +42,152 @@ body{
 .header-mobile button{
     border: none;
     background: none;
+    width: 10%;
+    height: auto;
+    color: #00A7EF;
+    display: flex;
+
+}
+
+.icone{
+    height: 31.11px;
+    width: 45px;
+    
+}
+
+.foto-principal img{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    
+
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 441px;
+    position: relative;
+    
+    
+}
+
+.container1 h1{
+
+    color: #00A7EF;
+    position: absolute;
+    left: 50px;
+    z-index: 10;
+    display: flex;
+    width: 273px;
+    height: 43px;
+    
+
+    
+
+    
+
+}
+
+.casasBH {
+    background-color: #EAEAEA;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    width: 131px;
+    height: 116px;
+    display: flex;
+    box-shadow: offset-y;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center
+    
+    
+}
+
+.casasBH img{
+    width: 91px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    text-align:center
+    
+}
+
+.cruzeiro {
+    background-color: #EAEAEA;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 85px;
+    left: 195px;
+    width: 131px;
+    height: 116px;
+    display: flex;
+    box-shadow: offset-y;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center
+}
+
+.cruzeiro img{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+    object-fit: contain;
 
 
 }
+
+.ipanema {
+    background-color: #EAEAEA;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    width: 131px;
+    height: 116px;
+    display: flex;
+    box-shadow: offset-y;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center
+}
+
+.ipanema img{
+    width: 120px;
+    height: 30px;
+    border: none;
+    background: none;
+    object-fit: contain;
+
+}
+
+.claro {
+    background-color: #EAEAEA;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 250px;
+    left: 195px;
+    width: 131px;
+    height: 116px;
+    display: flex;
+    box-shadow: offset-y;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center
+}
+
+.claro img{
+    width: 83px;
+    height: 34px;
+    border: none;
+    background: none;
+    object-fit: contain;
+
+}
+
+
+
