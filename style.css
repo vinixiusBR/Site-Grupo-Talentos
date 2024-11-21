@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 400;
     
     
 }
@@ -11,21 +12,23 @@
     --cor-primaria: #ffffff;
     --cor-secundaria: #00A7EF;
     --cor-tercearia: #EAEAEA;
+    --cor-fundo-paragrafos: #DFDFDF;
 
 }
 
 body{
 
-    padding: 1.75rem 1rem;
+    padding: 1.75rem 0rem;
 }
 
 .header-mobile{
 
     display: flex;
+    margin-top: 20px;
     
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: #ffffff
     
     
@@ -36,34 +39,38 @@ body{
     width: 5rem;
     height: auto;
     display: block;
+    margin-left: 15px;
 
 }
 
 .header-mobile button{
     border: none;
     background: none;
-    width: 10%;
-    height: auto;
+    width: 64px;
+    height:  40px;
     color: #00A7EF;
     display: flex;
 
 }
 
-.icone{
-    height: 31.11px;
-    width: 45px;
+.iconify{
+    height: 40px;
+    width: 64px;
     
 }
+/*Aqui finaliza o Header */
 
 .foto-principal img{
     max-width: 100%;
-    height: auto;
+    height: 45rem;
     display: flex;
     
 
 }
 
 .container1 {
+    margin-left: 15px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -82,10 +89,7 @@ body{
     display: flex;
     width: 273px;
     height: 43px;
-    
-
-    
-
+    font-size: 30px;
     
 
 }
@@ -181,6 +185,7 @@ body{
 }
 
 .claro img{
+    display: flex;
     width: 83px;
     height: 34px;
     border: none;
@@ -188,6 +193,54 @@ body{
     object-fit: contain;
 
 }
+
+/* aqui finaliza o primeiro container
+   Iniciando segundo container */
+
+   .container2{
+    max-width: 100%;
+    height: 1138;
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+
+   }
+    
+
+   .container2 h1{
+    position: absolute;
+    left: 115px;
+    z-index: 10;
+    color: #00A7EF;
+    display: flex; 
+    width: 273px;
+    height: 43px;
+    font-size: 30px;
+
+   }
+
+   .fotosobre{
+    width: 375px;
+    max-height: 100%;
+    margin-top: 100px;
+
+   }
+   .paragrafos{
+    background-color:#DFDFDF;
+   }
+
+
+   .paragrafo-1{
+
+    text-align: justify;
+    font-size: 14;
+    padding: 30px;
+    background-color: #EAEAEA;
+   }
+
+
 
 
 
