@@ -297,6 +297,7 @@ body{
     display: flex;
     
     
+    
    }
 
    .container4 p{
@@ -305,6 +306,7 @@ body{
     text-align: justify;
     margin-left: 25px;
     color: black;
+    font-weight: bold;
    }
 
    .container4 img{
@@ -334,7 +336,14 @@ body{
     display: inline-block;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
     
+   }
+
+   .container4 button:hover{
+    background-color: #00A7EF;
+    color: #ffffff;
+    border: none;
     
     
    }
@@ -343,20 +352,109 @@ body{
    /*INICIANDO CONTAINER5 (fale conosco*/
 
    .container5{
+    
+    position: relative;
     width: 100%;
-    height: 463px;
+    height: 480px;
     background-color: #ffffff;
     align-items: center;
+    overflow: hidden;
 
    }
+   
 
    .container5 h1{
     display: flex;
     font-size: 30px;
-    padding: 25px;
+    padding: 30px;
     color: #00A7EF;
     margin-left: 75px;
    }
+
+   .container5 img{
+    width: 157px;
+    height: 162px;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding: 5px;
+   }
+
+   .container5 form{
+    position: absolute;
+    top: 105px;
+    width: 146px;
+    background-color: #ffffff;
+    margin-left: 200px;
+    
+   }
+   .container5 label{
+    font-size: 14px;
+    margin-bottom: 8px;
+   }
+
+   .container5 input, .container5 textarea{
+    width: 150px;
+    border: 2px solid #00A7EF;
+    margin-bottom: 8px;
+    
+    
+   }
+
+   .container5 button{
+    background-color: #00A7EF;
+    color: #ffffff;
+    border-radius: 14px;
+    width: 145px;
+    height: 35px;
+    border: 2px solid #00A7EF;
+    margin-top: 30px;
+    font-size: 14px;
+    cursor: pointer;
+   }
+
+   .container5 button:hover{
+    background-color: #ffffff;
+    color: #00A7EF;
+    
+   }
+   .circulo1{
+    position: absolute;
+    width: 50px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #00A7EF;
+    top: -9px;
+    left: 338px;
+
+   }
+
+   .circulo2{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #00A7EF;
+    top: 340px;
+    left: 50px;
+
+   }
+
+   .circulo3{
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background-color: #00A7EF;
+    top: 377px;
+    left: 80px;
+    
+   }
+
+   /*CONTAINER5 FINALIZA AQUI*/
+   /*INICIANDO container rodapé/
+   
+
+
 
 
 
