@@ -294,7 +294,6 @@ body{
     font-size: 30px;
     color: #00A7EF;
     padding: 25px;
-    
     display: flex;
     
     
@@ -340,6 +339,24 @@ body{
     
    }
 
+/*CONTAINER4 FINALIZA AQUI*/
+   /*INICIANDO CONTAINER5 (fale conosco*/
+
+   .container5{
+    width: 100%;
+    height: 463px;
+    background-color: #ffffff;
+    align-items: center;
+
+   }
+
+   .container5 h1{
+    display: flex;
+    font-size: 30px;
+    padding: 25px;
+    color: #00A7EF;
+    margin-left: 75px;
+   }
 
 
 
