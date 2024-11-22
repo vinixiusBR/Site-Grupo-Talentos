@@ -451,8 +451,23 @@ body{
    }
 
    /*CONTAINER5 FINALIZA AQUI*/
-   /*INICIANDO container rodapé/
+   /*INICIANDO container rodapé*/
    
+   .container6{
+    height: 387px;
+    background-color: #DFDFDF;
+    align-items: center;
+
+   }
+
+   .containerlinks img{
+    width: 130px;
+    height: 60px;
+    margin-left: 100px;
+    
+   }
+
+
 
 
 
