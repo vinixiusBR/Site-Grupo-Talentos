@@ -56,6 +56,8 @@ body{
 .iconify{
     height: 40px;
     width: 64px;
+    color: #00A7EF;
+    
     
 }
 /*Aqui finaliza o Header */
@@ -454,18 +456,101 @@ body{
    /*INICIANDO container rodapé*/
    
    .container6{
-    height: 387px;
+    display: flex;
+    height: 500px;
     background-color: #DFDFDF;
-    align-items: center;
+    
 
    }
 
-   .containerlinks img{
+   .imagempe{
     width: 130px;
     height: 60px;
-    margin-left: 100px;
+    margin-top: 40px;
+   
+    margin-left: 120px;
+    
     
    }
+   .containerlinks{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 80px;
+    gap: 5px;
+    width: 50px;
+    height: 50px;
+    }
+
+    .contatos{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        margin-left: 75px;
+       
+    }
+
+    .contatos h2{
+
+        font-size: 12px;
+        text-align: center;
+        margin: 11px;
+        font-weight: bold;
+
+        
+        
+    }
+
+    .contatos p{
+
+        font-size: 13px;
+        margin-top: px;
+    }
+
+    .navegacao{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 75px;
+        list-style-type: none;
+
+    }
+
+    .navegacao h2{
+        font-size: 12px;
+        text-align: center;
+        margin: 11px;
+        font-weight: bold;
+
+    }
+
+    .navegacao h3{
+        font-size: 13px;
+        
+    }
+
+    .navegacao p{
+        font-size: 13px;
+        margin-top: px;
+
+    }
+   .termos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 75px;
+        margin-bottom: 20px;
+
+   }
+
+   .termos p{
+        font-size: 13px;
+        margin-top: px;
+        
+   }
+
+
+   
 
 
 
