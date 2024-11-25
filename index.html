@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <span id="hamburguerIcon" class="material-symbols">menu</span>
 
 
     <title>GrupoTalentos</title>
@@ -19,12 +21,25 @@
 
         <img src="./imagens/GrupoTalentosLogo2.jpeg" alt="logo">
         
-        <button>
+        <button id="botaomenu">
             <span class="iconify" data-icon="codicon:three-bars"></span>
+            <span id="hamburguerIcon" class="material-symbols">menu</span>
 
         </button>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="   ">Inicio</a></li>
+                <li><a href="   ">Sobre nós</a></li>
+                <li><a href="   ">Trabalhe conosco</a></li> 
+                <li><a href="   ">Politicas e Segurança</a></li>
+
+            </ul>
+
+        </nav>
         
     </header>
+    <div id="overlay" class="overlay"></div>
 
     <div class="foto-principal">
         <img src="./imagens/mensagem-de-cobranca.jpg" alt="foto de inicio">
