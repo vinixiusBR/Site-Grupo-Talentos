@@ -1,23 +1,21 @@
-const botaomenu = document.getElementById("botaomenu")
-const menu = document.getElementById("menu")
-const overlay = document.getElementById("overlay")
+const botaomenu = document.getElementById("botaomenu");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("overlay");
 
-
-botaomenu.addEventListener("click", function(){
-
+botaomenu.addEventListener("click", function() {
     menu.classList.toggle("show");
-
+    
     overlay.classList.toggle("show");
-    botaomenu.classList.toggle ("active");
+   
+    botaomenu.classList.toggle("active");
 
-    if (icon.getAttribute("data-icon") === "bi:three-bars") {
-        icon.setAttribute("data-icon", "bi:x");
+   
+    const icon = botaomenu.querySelector(".iconify");
+
+    
+    if (icon.getAttribute("data-icon") === "codicon:three-bars") {
+        icon.setAttribute("data-icon", "material-symbols:close");
     } else {
-        icon.setAttribute("data-icon", "bi:three-bars");
+        icon.setAttribute("data-icon", "codicon:three-bars");
     }
-
-
-
-
-
-})
+});
