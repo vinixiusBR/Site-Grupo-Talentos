@@ -17,6 +17,7 @@
 }
 
 body{
+    background-color: #EAEAEA;
 
     
 }
@@ -94,10 +95,6 @@ body{
     
 }
 
-
-
-
-
 .header-mobile nav{
     display: none;
     background-color: #ffffff;
@@ -140,6 +137,70 @@ button.active .iconify {
     transform: rotate(90deg);
     transition: transform 0.3s ease-in-out;
 }
+
+/*fim do header aqui*/
+/*Inicio do container 1 aqui*/
+
+
+.fotocadeado{
+    width: 100%;
+}
+
+h1{
+    font-size: 30px;
+    color: #00A7EF;
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 7vh;
+    font-weight: bold;
+}
+
+
+.containerbotoes{
+
+    max-width: 100%;
+ 
+    height: 391px;
+
+    
+    
+  
+
+}
+
+
+.panel{
+    display: none;
+    
+}
+
+.panel.active{
+    display: block;
+}
+
+.acordo{
+    display: block;
+    background-color: #ffffff;
+    width: 50vh;
+    height: 7vh;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    font-weight:bolder
+    
+  
+}
+
+
+
+
+
+
+
 
 
 
@@ -287,7 +348,7 @@ button.active .iconify {
 
 
 
-   
+
 
 
 
