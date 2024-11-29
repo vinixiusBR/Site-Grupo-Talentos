@@ -437,6 +437,17 @@ button.active .iconify {
     
    }
 
+   .container4 a{
+    text-decoration: none;
+    color: #00A7EF;
+    display: block;
+   }
+
+   .container4 a:hover{
+    color: #ffffff;
+
+   }
+
 /*CONTAINER4 FINALIZA AQUI*/
    /*INICIANDO CONTAINER5 (fale conosco*/
 
