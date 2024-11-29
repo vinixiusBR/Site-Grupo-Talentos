@@ -66,7 +66,15 @@ body{
 
 }
 
-.header-mobile button{
+#inicio{
+    display: none;
+}
+#trabalhe{
+    display: none;
+}
+
+
+#botaomenu{
     border: none;
     background: none;
     width: 35px;
@@ -643,6 +651,13 @@ button.active .iconify {
         color: #ffffff;
 
     }
+
+    .navegacao a{
+
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 13px;
+    }
    .termos{
         display: flex;
         flex-direction: column;
@@ -662,6 +677,48 @@ button.active .iconify {
 
 @media (min-width: 750px) {
 
+    .containerbotao{
+        display: flex;
+        gap: 10%;
+        margin-right: 5%;
+    }
+    
+    #inicio, #trabalhe{
+        display: block;
+        background-color: #ffffff;
+        border-color: #00A7EF;
+        border-radius: 15px;
+        color: #00A7EF;
+        font-size: 13px;
+        width: 20vh;
+        height: 4vh;
+        text-align: center;
+        cursor: pointer;
+
+    }
+
+
+    #inicio a, #trabalhe a{
+
+        text-decoration: none;
+        color: #575757;
+        font-weight: bold;
+        display: block;
+        
+    }
+
+    #inicio:hover, #trabalhe:hover{
+        background-color: #00A7EF;
+        border: none;
+        display: block;
+    }
+
+    #inicio a:hover, #trabalhe a:hover{
+        color: #ffffff;
+        display: block;
+    }
+
+   
     #botaomenu{
         display: none;
     }
@@ -775,6 +832,13 @@ button.active .iconify {
             
             margin-top: 3%;
     
+        }
+
+        .navegacao a{
+
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.5vh;
         }
        .termos{
             display: flex;
