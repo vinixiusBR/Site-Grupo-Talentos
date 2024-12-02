@@ -177,6 +177,7 @@ button.active .iconify {
     width: 273px;
     height: 43px;
     font-size: 30px;
+    font-weight: bold;
     
 
 }
@@ -286,6 +287,7 @@ button.active .iconify {
    .H1sobre{
 
     margin-left: 32%;
+    font-weight: bold;
     
     font-size: 31px;
     color: #00A7EF;
@@ -384,6 +386,7 @@ button.active .iconify {
     color: #00A7EF;
     padding: 25px;
     display: flex;
+   
     
     
     
@@ -469,6 +472,7 @@ button.active .iconify {
     padding: 30px;
     color: #00A7EF;
     margin-left: 75px;
+    font-weight: bold;
    }
 
    .container5 img{
@@ -900,6 +904,7 @@ button.active .iconify {
     font-size: 47px;
     width: 543px;
     height: 78px;
+    font-weight: bold;
 
    }
    
@@ -997,6 +1002,7 @@ button.active .iconify {
         
         font-size: 47px;
         color: #00A7EF;
+        font-weight: bold;
         
        
 
@@ -1094,6 +1100,7 @@ button.active .iconify {
         font-size: 50px;
         margin-left: 8%;
         padding-top:  10%;
+      
       }
 
       .container4 p{
@@ -1140,6 +1147,7 @@ button.active .iconify {
         font-size: 40px;
         margin-left: 35%;
         margin-top: 2%;
+        font-weight: bold;
         
       }
 

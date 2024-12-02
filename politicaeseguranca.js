@@ -1,6 +1,9 @@
 const botaomenu = document.getElementById("botaomenu");
 const menu = document.getElementById("menu");
 const overlay = document.getElementById("overlay");
+const imagem = document.querySelector(".fotocadeado");
+
+
 
 botaomenu.addEventListener("click", function() {
     menu.classList.toggle("show");
@@ -19,3 +22,28 @@ botaomenu.addEventListener("click", function() {
         icon.setAttribute("data-icon", "codicon:three-bars");
     }
 });
+
+
+const acordos = document.querySelectorAll('.acordo');
+
+acordos.forEach(button =>{
+
+    button.addEventListener('click', function (){
+        
+        const panel = this.nextElementSibling;
+
+        panel.classList.toggle('active');
+
+        if (imagem.style.display === "none") {
+
+            imagem.style.display = "block";
+
+        } else {
+            imagem.style.display = "none";
+        }
+
+        
+
+        
+    })
+})

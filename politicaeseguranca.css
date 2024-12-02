@@ -1,0 +1,744 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 400;
+    
+    
+}
+
+:root{
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #00A7EF;
+    --cor-tercearia: #EAEAEA;
+    --cor-fundo-paragrafos: #DFDFDF;
+    --cor-paragrafor:#2A2929;
+
+}
+
+body{
+    background-color: #EAEAEA;
+
+    
+}
+
+
+.header-mobile {
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: #ffffff;
+    height: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999; 
+    position: -webkit-sticky; 
+    position: sticky; 
+    top: 0; 
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 990;
+}
+
+.overlay.show {
+    display: block;
+}
+.header-mobile img {
+    display: flex;
+    border: none;
+    background: none;
+    width: 5rem;
+    height: auto;
+    display: block;
+    margin-left: 15px;
+    margin-top: 0;
+    
+
+}
+
+#inicio{
+    display: none;
+}
+#trabalhe{
+    display: none;
+}
+
+
+#botaomenu{
+    border: none;
+    background: none;
+    width: 35px;
+    height:  30px;
+    color: #00A7EF;
+    display: flex;
+    margin-right: 5%;
+
+}
+
+.iconify{
+    height: 32px;
+    width: 64px;
+    color: #00A7EF;
+    display: flex;
+    
+    
+}
+
+.header-mobile nav{
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 70%;
+    height: 115vh;
+    transition: left 0.3s ease;
+
+
+}
+
+.header-mobile ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-mobile ul li {
+    text-align: center;
+    padding: 15px;
+}
+.header-mobile ul li a {
+    text-decoration: none;
+    color: #00A7EF;
+    font-size: 18px;
+    display: block;
+}
+
+.header-mobile ul li a:hover {
+    background-color: #575757;
+}
+
+nav.show {
+    display: block;
+}
+
+button.active .iconify {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/*fim do header aqui*/
+/*Inicio do container 1 aqui*/
+
+
+.fotocadeado{
+    width: 100%;
+    
+}
+
+h1{
+    font-size: 30px;
+    color: #00A7EF;
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 7vh;
+    font-weight: bold;
+}
+
+
+.containerbotoes{
+
+    max-width: 100%;
+ 
+    height: auto;
+    margin-bottom: 20%;
+
+    
+    
+  
+
+}
+
+.panel.active{
+    display: block;
+}
+
+
+.panel{
+    display: none;
+    text-align: justify;
+    padding: 8%;
+    background-color: #ffffff;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    
+}
+
+.panel h2{
+
+    color: #00A7EF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.panel p{
+    color: #2A2929;
+    font-size: 14px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-weight: bold;
+   
+}
+
+
+
+.acordo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    background-color: #ffffff;
+    width: 50vh;
+    height: 7vh;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    box-shadow: 0px  4px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    font-weight:bolder
+    
+    
+  
+}
+
+
+.acordo i{
+    white-space: 1%;
+}
+
+
+
+
+
+
+/*inicio do container final mobile*/
+
+
+
+.container6{
+    display: flex;
+    
+    max-width: 100%;
+    background-color: rgb(69 69 69);
+    height: 90vh;
+    
+    
+
+   }
+
+   .container6 footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+
+
+   }
+
+   .container6 img{
+    width: 130px;
+    height: 60px;
+    margin-top: 10%;
+   
+    margin-left: 33%;
+    
+    
+   }
+   .containerlinks{
+    display: flex;
+    margin-top: 20%;
+    margin-left: 27%;
+    
+    gap: 5px;
+    width: 100%;
+    height: 50px;
+    }
+
+    
+
+    .contatos{
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+        display: flex;
+    
+        
+       
+    }
+
+    .contatos h2{
+
+        font-size: 12px;
+        text-align: center;
+        margin: 11px;
+        font-weight: bold;
+        color: #ffffff;
+
+        
+        
+    }
+
+    .contatos p{
+
+        font-size: 13px;
+        
+        margin-top: 3%;
+        color: #ffffff;
+    }
+
+
+    .navegacao{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+       
+        list-style-type: none;
+      
+
+    }
+
+    
+
+    .navegacao h2{
+        font-size: 12px;
+        text-align: center;
+        margin: 11px;
+        font-weight: bold;
+        
+        top: 50%;
+        color: #ffffff;
+
+    }
+
+    .navegacao h3{
+        font-size: 13px;
+        color: #ffffff;
+        
+    }
+
+    .navegacao p{
+        font-size: 13px;
+        margin-top: px;
+        color: #ffffff;
+
+    }
+
+    .navegacao a{
+
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 13px;
+    }
+   .termos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #ffffff;
+    
+        
+
+   }
+
+   .termos p{
+        font-size: 13px;
+        
+       
+        
+   }
+
+   /*AQUI TEMINA O CONTAINER FINAL MOBILE*/
+
+
+
+
+
+
+
+
+
+
+
+ /*inico do rodapé da pagina desktop*/
+
+
+
+   @media (min-width: 750px){
+
+
+
+    .containergeral{
+
+        position: relative;
+    }
+    
+
+    
+
+    .fotocadeado{
+
+        position: absolute;
+        width: 40%;
+        height: 64%;
+        left: 55%;
+        top: 38%;
+    
+    }
+
+    h1{
+        font-size: 45px;
+        color: #00A7EF;
+        text-align: center;
+        margin-top: 8vh;
+        margin-bottom: 13vh;
+        font-weight: bold;
+    }
+    
+    
+    .containerbotoes{
+    
+        max-width: 100%;
+     
+        height: auto;
+        margin-bottom: 13%;
+    
+        
+        
+      
+    
+    }
+    
+    .panel.active{
+        display: block;
+    }
+    
+    
+    .panel{
+        display: none;
+        text-align: justify;
+        padding: 8%;
+        background-color: #ffffff;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        transition: all 0.5s ease;
+        
+        
+        
+    }
+    
+    .panel h2{
+    
+        color: #00A7EF;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .panel p{
+        color: #2A2929;
+        font-size: 16px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        font-weight: bold;
+       
+    }
+
+
+    .panel :hover{
+
+    }
+    
+    
+    
+    .acordo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+        width: 59vh;
+        height: 7vh;
+        margin-top: 5%;
+        margin-left: 5%;
+        border-radius: 20px;
+        border: none;
+        color: black;
+        box-shadow: 0px  4px rgba(0, 0, 0, 0.1);
+        font-size: 26px;
+        cursor: pointer;
+        
+        font-weight:bolder
+        
+      
+    }
+
+    .containerbotoes button:hover{
+        background-color: #00A7EF;
+        color: #ffffff;
+    }
+
+    
+    
+
+
+
+
+    .containerbotao{
+        display: flex;
+        gap: 10%;
+        margin-right: 5%;
+    }
+
+
+
+
+
+    
+    #inicio, #trabalhe{
+        display: block;
+        background-color: #ffffff;
+        border-color: #00A7EF;
+        border-radius: 15px;
+        color: #00A7EF;
+        font-size: 13px;
+        width: 20vh;
+        height: 4vh;
+        text-align: center;
+        cursor: pointer;
+
+    }
+
+
+    #inicio a, #trabalhe a{
+
+        text-decoration: none;
+        color: #575757;
+        font-weight: bold;
+        display: block;
+        
+    }
+
+    #inicio:hover, #trabalhe:hover{
+        background-color: #00A7EF;
+        border: none;
+        display: block;
+    }
+
+    #inicio a:hover, #trabalhe a:hover{
+        color: #ffffff;
+        display: block;
+    }
+
+   
+    #botaomenu{
+        display: none;
+        transition: all 0.3s ease;
+    }
+
+
+    .iconify{
+        height: 35px;
+        width: 64px;
+        color: #00A7EF;
+        display: flex;
+        
+        
+    }
+
+    .container6{
+        all: unset;
+        display: flex;
+        
+
+        max-width: 100%;
+        background-color: rgb(69 69 69);
+        height: 40vh;
+        position: relative;
+        
+        
+    
+       }
+    
+       .container6 footer{
+        all: unset;
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        gap: 10%;
+        margin-top: 3%;
+        
+    
+    
+    
+       }
+
+
+    
+       .container6 img{
+        all: unset;
+        width: 130px;
+        height: 60px;
+        margin-left: 4%;
+        
+       
+        
+        
+        
+       }
+       .containerlinks{
+        all: unset;
+        display: flex;
+        margin-top: 10%;
+        margin-left: 4%;
+        position: absolute;
+        gap: 10px;
+
+        
+        
+        
+        }
+    
+        
+    
+        .contatos{
+            align-items: center;
+            flex-direction: column;
+            text-align: justify;
+            display: flex;
+            margin-left: 10%;
+        
+            
+           
+        }
+
+
+        .contatos h2{
+
+            font-size: 1.5vh;
+            color: #ffffff;
+            
+        }
+    
+        .contatos p{
+    
+            font-size: 1.2vh;
+            color: #ffffff;
+            
+            margin-top: 3%;
+        }
+    
+        
+    
+        .navegacao h2{
+            font-size: 1.5vh;
+            color: #ffffff;
+            
+    
+        }
+    
+        .navegacao h3{
+            font-size: 13px;
+            
+        }
+    
+        .navegacao p{
+            font-size: 1.2vh;
+            color: #ffffff;
+            
+            margin-top: 3%;
+    
+        }
+
+        .navegacao a{
+
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.5vh;
+        }
+       .termos{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        
+            
+    
+       }
+    
+       .termos p{
+            font-size: 1.2vh;
+            color: #ffffff;
+            margin-top: 9%;
+            
+           
+            
+       }
+    
+    
+    .header-mobile img{
+        margin-left: 80px;
+        
+        top: 15px;
+        
+    }
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
