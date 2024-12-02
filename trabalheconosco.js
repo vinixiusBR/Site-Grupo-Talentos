@@ -1,6 +1,7 @@
 const botaomenu = document.getElementById("botaomenu");
 const menu = document.getElementById("menu");
 const overlay = document.getElementById("overlay");
+const imagem = document.querySelector(".fotocadeado");
 
 
 
@@ -32,6 +33,16 @@ acordos.forEach(button =>{
         const panel = this.nextElementSibling;
 
         panel.classList.toggle('active');
+
+        if (imagem.style.display === "none") {
+
+            imagem.style.display = "block";
+
+        } else {
+            imagem.style.display = "none";
+        }
+
+        
 
         
     })

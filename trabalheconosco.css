@@ -88,7 +88,7 @@ body{
 }
 
 .iconify{
-    height: 40px;
+    height: 32px;
     width: 64px;
     color: #00A7EF;
     display: flex;
@@ -145,6 +145,7 @@ button.active .iconify {
 
 .fotocadeado{
     width: 100%;
+    
 }
 
 h1{
@@ -204,7 +205,10 @@ h1{
 
 
 .acordo{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
     background-color: #ffffff;
     width: 50vh;
     height: 7vh;
@@ -220,6 +224,13 @@ h1{
     
   
 }
+
+
+.acordo i{
+    white-space: 1%;
+}
+
+
 
 
 
@@ -378,6 +389,13 @@ h1{
 
 
    @media (min-width: 750px){
+
+
+
+    .containergeral{
+
+        position: relative;
+    }
     
 
     
@@ -385,17 +403,19 @@ h1{
     .fotocadeado{
 
         position: absolute;
-        left: 50%;
-        all: unset
-        
+        width: 40%;
+        height: 64%;
+        left: 55%;
+        top: 38%;
+    
     }
 
     h1{
-        font-size: 30px;
+        font-size: 45px;
         color: #00A7EF;
         text-align: center;
-        margin-top: 6vh;
-        margin-bottom: 7vh;
+        margin-top: 8vh;
+        margin-bottom: 13vh;
         font-weight: bold;
     }
     
@@ -405,7 +425,7 @@ h1{
         max-width: 100%;
      
         height: auto;
-        margin-bottom: 20%;
+        margin-bottom: 13%;
     
         
         
@@ -425,31 +445,42 @@ h1{
         background-color: #ffffff;
         margin-top: 10%;
         margin-bottom: 15%;
+        transition: all 0.5s ease;
+        
+        
         
     }
     
     .panel h2{
     
         color: #00A7EF;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: bold;
     }
     
     .panel p{
         color: #2A2929;
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 5%;
         margin-bottom: 3%;
         font-weight: bold;
        
     }
+
+
+    .panel :hover{
+
+    }
     
     
     
     .acordo{
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         background-color: #ffffff;
-        width: 50vh;
+        transition: all 0.3s ease;
+        width: 59vh;
         height: 7vh;
         margin-top: 5%;
         margin-left: 5%;
@@ -457,13 +488,21 @@ h1{
         border: none;
         color: black;
         box-shadow: 0px  4px rgba(0, 0, 0, 0.1);
-        font-size: 17px;
-        font-weight:bolder
+        font-size: 26px;
+        cursor: pointer;
         
+        font-weight:bolder
         
       
     }
 
+    .containerbotoes button:hover{
+        background-color: #00A7EF;
+        color: #ffffff;
+    }
+
+    
+    
 
 
 
@@ -517,13 +556,17 @@ h1{
    
     #botaomenu{
         display: none;
+        transition: all 0.3s ease;
     }
 
 
     .iconify{
-        color: #ffffff;
-        width: 85%;
-      
+        height: 35px;
+        width: 64px;
+        color: #00A7EF;
+        display: flex;
+        
+        
     }
 
     .container6{
