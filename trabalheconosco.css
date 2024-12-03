@@ -192,7 +192,8 @@ button.active .iconify {
     justify-content: center; 
     margin-left: 25%;
     margin-top: 7%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+
 
     
 }
@@ -211,6 +212,20 @@ button.active .iconify {
     width: 323px;
     margin-left: 7%;
     border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.containergeral{
+
+    max-width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 
@@ -226,6 +241,7 @@ button.active .iconify {
 
 
 .valores h2{
+    
 
     font-size: 21px;
     text-align: center;
@@ -239,13 +255,16 @@ button.active .iconify {
 
 h1{
 
-    text-align: center;
+    
     font-size: 17px;
     color: #00A7EF;
     font-weight: bold;
     margin-bottom: 2.5vh;
+    margin-left: 18.5vh;
 
 }
+
+
 
 .valores p{
     font-size: 14px;
@@ -257,12 +276,58 @@ h1{
     
 }
 
+.compromisso{
+    position: relative;
+}
 
-.h1A{
+.compromisso i{
 
+    position: absolute;
+    left: 8%;
+    top: 40%; 
+    height: 100px;
+    width: 500px;
+}
+
+
+.desenvolvimento{
+    position: relative;
+}
+
+.desenvolvimento i{
+    position: absolute;
+    left: 8%;
+    top: 40%;
+    
+}
+
+
+.empatia{
+    position: relative;
+}
+
+.empatia i{
+    position: absolute;
+    left: 8%;
+    top: 40%;
+}
+
+.perfomance{
+    position: relative;
+}
+
+.perfomance i {
+    position: absolute;
+    left: 8%;
+    top: 40%;
+}
+
+
+h5{
     font-size: 21px;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+    margin-bottom: 8vh;
+    text-align: center;
+    color: #00A7EF;
 }
 
 
@@ -497,6 +562,67 @@ h1{
 
 .tecnologia h2{
     margin-top: 6vh;
+}
+
+
+/*areas termina aqui*/
+
+.fotofinal{
+    max-width: 100%;
+    height: 334px;
+}
+
+.trabalhe{
+    max-width: 100%;
+    height: 460px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.trabalhe h2{
+    margin-top: 8vh;
+    color: #00A7EF;
+    font-weight: 400;
+    font-size: 21px;
+    margin-right: 25vh;
+    margin-bottom: 3.5vh;
+
+}
+
+
+.trabalhe p{
+
+    font-size: 13px;
+    margin-bottom: 3vh;
+    
+    font-weight: bold;
+    color: #202020;
+    margin-left: 5.5vh;
+    margin-right: 9vh;
+
+}
+
+
+
+.link{
+    margin-right:6vh;
+    width: 38vh;
+    height: 6.5vh;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #00A7EF;
+    margin-top: 7vh;
+    border: none;
+
+}
+
+
+.link a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 2px;
+    font-size: 13px;
 }
 
 
