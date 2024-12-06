@@ -17,8 +17,6 @@
 }
 
 
-
-
 .header-mobile {
     display: flex;
     width: 100%;
@@ -286,6 +284,7 @@ h1{
     font-weight: bold;
     margin-left: 33%;
     margin-right: 9%;
+    hyphens: auto;
     
 }
 
@@ -428,6 +427,7 @@ h5{
     width: 154px;
     background-color: #EAEAEA;
     position: relative;
+    text-align: left;
     border: 0;
     border-radius: 15px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
@@ -627,8 +627,14 @@ h5{
     color: #ffffff;
     background-color: #00A7EF;
     margin-top: 7vh;
-    border: none;
+    border: 2px solid transparent;
 
+}
+
+.link:hover{
+    background-color: #ffffff;
+    color: #00A7EF;
+    border-color: #00A7EF;
 }
 
 
@@ -639,27 +645,9 @@ h5{
     font-size: 13px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.link a:hover{
+    color:#00A7EF;
+}
 
 
 
@@ -700,12 +688,29 @@ h5{
    }
    .containerlinks{
     display: flex;
-    margin-top: 20%;
-    margin-left: 27%;
+    margin-top: 15%;
+    margin-bottom: 10%;
     
     gap: 5px;
     width: 100%;
     height: 50px;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+    .iconify.face{
+        color: #ffffff;
+
+    }
+
+    .iconify.instagram{
+        color: #ffffff;
+
+    }
+
+    .iconify.linkedin{
+        color: #ffffff;
     }
 
     
@@ -947,12 +952,432 @@ h5{
             height: 280px;
             width: 400px;
             left: 58%;
-            top:20%;
+            top:21.5%;
             border: 0;
             border-radius: 25px;
             margin-right: 7%;
 
         }
+
+
+        .containergeral{
+
+       
+            
+        }
+
+        .pair1{
+            display: flex;
+        }
+
+        .pair2{
+            display: flex;
+            height: 200px;
+        }
+        
+        
+        .valores{
+        
+            height: 850px;
+            max-width: 100%;
+            background-color: #EAEAEA;
+           
+            
+        
+        }
+        
+        
+        .valores h2{
+            
+        
+            font-size: 40px;
+            text-align: center;
+            padding-top:10vh;
+            color: #00A7EF;
+            font-weight: bold;
+            margin-bottom: 14vh;
+        
+        }
+        
+        
+        h1{
+            all: unset;
+        
+            
+            font-size: 30px;
+            text-align: justify;
+            color: #00A7EF;
+            font-weight: bold;
+            
+           
+        
+        }
+        
+        
+        
+        .valores p{
+        
+            
+            
+            font-size: 15px;
+           
+            text-align: justify;
+            font-weight: bold;
+            height: 200px;
+            hyphens: auto;
+        }
+        
+        .compromisso{
+            position: relative;
+            height: auto;
+            width: 45%;
+        }
+
+        .compromisso h1{
+
+
+            margin-left: 33%;
+        }
+
+        .compromisso p {
+            margin-top: 7%;
+
+        }
+        
+        .compromisso i{
+        
+            position: absolute;
+            left: -135px;
+            top: 33%; 
+           
+        }
+        
+        
+        .desenvolvimento{
+            position: relative;
+            width: 45%;
+            margin-left: 5%;
+        }
+
+        .desenvolvimento h1{
+
+            margin-left: 32.5%;
+        }
+
+        .desenvolvimento p {
+            margin-top: 7%;
+        }
+        
+        .desenvolvimento i{
+            position: absolute;
+            left: 13%;
+            top: 33%;
+            
+        }
+        
+        
+        .empatia{
+            position: relative;
+            width: 45%;
+        }
+
+        .empatia h1{
+            margin-left: 33%;
+        }
+
+        .empatia p{
+            margin-top: 7%;
+        }
+        
+        .empatia i{
+            position: absolute;
+            left: 60px;
+            top: 40%;
+        }
+        
+        .perfomance{
+            position: relative;
+            width: 45%;
+            margin-left: 5%;
+        }
+        
+        .perfomance i {
+            position: absolute;
+            left:14%;
+            top: 40%;
+        }
+
+        .perfomance h1{
+            margin-left: 32.5%;
+            
+        }
+
+        .perfomance p{
+            margin-top: 7%;
+        }
+
+        
+
+
+        h5{
+            font-size: 40px;
+        }
+
+
+        .areas{
+            max-width: 100%;
+            height: 1200px;
+            position: relative;
+        }
+
+        .par1{
+
+        }
+
+        .par2{
+
+
+        }
+
+        .areas h2{
+            font-weight: bold;
+            font-size: 33px;
+        }
+
+        .areas p {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+
+        .linha{
+
+            width: 135px;
+        }
+
+
+        .rh{
+            height: 500px;
+            width: 290px;
+            background-color: #EAEAEA;
+            position: relative;
+            text-align: left;
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            margin-left: 7vh;
+        
+        }
+        
+        .rh h2{
+        
+            margin-top: 5vh;
+        }
+        
+        
+        .surpevisores{
+        
+            height: 500px;
+            width: 290px;
+            background-color: #EAEAEA;
+            position: relative;
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            margin-left: 4vh;
+            
+        
+        
+        }
+        
+        .surpevisores i{
+        
+            position: absolute;
+            top: 3vh;
+            left: 3vh;
+        
+        
+        }
+        
+        .surpevisores h2{
+        
+            margin-top: 8vh;
+        }
+        
+        
+        
+        
+        .control{
+            height: 500px;
+            width: 290px;
+            background-color: #EAEAEA;
+            position: relative;
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            margin-left: 7vh;
+            
+        }
+        
+        .control i{
+            position: absolute;
+            top: 3vh;
+            left: 3vh;
+        
+        }
+        
+        .control h2{
+        
+            margin-top: 6vh;
+        
+        
+        }
+        
+        
+        .operadores{
+        
+            height: 500px;
+            width: 290px;
+            background-color: #EAEAEA;
+            position: relative;
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            margin-left: 4vh;
+        
+        }
+        
+        .operadores i{
+        
+            position: absolute;
+            top: 3vh;
+            left: 3vh;
+        
+        }
+        
+        .operadores h2{
+            margin-top: 6vh;
+        
+        
+        }
+        
+        
+        .analista{
+        
+            height: 500px;
+            width: 290px;
+            background-color: #EAEAEA;
+            position: absolute;
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            margin-left: 4vh;
+            left: 63%;
+            top: 0;
+        
+        
+        }
+        
+        .analista i{
+            position: absolute;
+            top: 3vh;
+            left: 3vh;
+        
+        }
+        
+        .analista h2{
+        
+            margin-top: 6vh;
+        }
+        
+        .tecnologia{
+            display: block;
+        
+            height: 500px;
+            width: 290px;
+            background-color: #EAEAEA;
+            position: absolute;
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            margin-left: 4vh;
+            left: 63%;
+            top: 44.5%;
+        
+        }
+        
+        .tecnologia i{
+            position: absolute;
+            top: 3vh;
+            left: 3vh;
+        
+        }
+        
+        .tecnologia h2{
+            margin-top: 6vh;
+        }
+
+
+        .fotofinal{
+            width: 100%;
+            height: 500px;
+        }
+
+        .trabalhe{
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+
+
+        }
+
+        .trabalhe h2{
+
+            all: unset;
+            color: #00A7EF;
+            margin-top: 10vh;
+            margin-right: 65%;
+            font-weight: 500;
+
+            font-size: 33px;
+            margin-bottom: 4%;
+        }
+
+        .trabalhe p{
+            font-size: 21px;
+            margin-left: 7%;
+            margin-right: 45%;
+            text-align: justify;
+        }
+
+
+        .link{
+            margin-right: 50%;
+            height: 60px;
+            width: 33%;
+        }
+        .link a{
+            font-size: 18px;
+        }
+
+        
+        
+
+
+
+
+
+
+
+        
+
+       
+
+        
+
+        
+
+
 
 
 
@@ -973,7 +1398,7 @@ h5{
 
 
     
-        .container6{
+            .container6{
             all: unset;
             display: flex;
             
