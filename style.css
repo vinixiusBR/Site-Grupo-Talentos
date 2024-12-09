@@ -99,14 +99,16 @@ body{
 
 
 .header-mobile nav{
-    display: none;
+    
     background-color: #ffffff;
+    display: block;
     position: absolute;
-    top: 100px;
-    left: 0;
+    top: 90px;
+    left: -250px;
     width: 70%;
     height: 115vh;
-    transition: left 0.3s ease;
+    transition: left 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    opacity: 0;
 
 
 }
@@ -133,8 +135,15 @@ body{
 }
 
 nav.show {
-    display: block;
+    
+    left: 0;
+    opacity: 1;
+    
+    
 }
+
+
+
 
 button.active .iconify {
     transform: rotate(90deg);
@@ -610,7 +619,7 @@ button.active .iconify {
     
     .iconify.face{
         color: #ffffff;
-        width: 80;
+        width: 80%;
         
 
     }
