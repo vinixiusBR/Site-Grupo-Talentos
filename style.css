@@ -17,8 +17,33 @@
 }
 
 body{
+    position: relative;
+   
 
     
+}
+
+#chatbox{
+    display: none;
+}
+
+.botaoapp{
+    display: none;
+}
+
+
+
+
+
+.elemento{
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(50px);
+}
+
+.elemento.visivel{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -99,9 +124,9 @@ body{
 
 
 .header-mobile nav{
+   
     
     background-color: #ffffff;
-    display: block;
     position: absolute;
     top: 90px;
     left: -250px;
@@ -135,11 +160,8 @@ body{
 }
 
 nav.show {
-    
     left: 0;
     opacity: 1;
-    
-    
 }
 
 
@@ -155,147 +177,56 @@ button.active .iconify {
 /*Aqui finaliza o Header */
 
 .foto-principal img{
-    max-width: 100%;
-    height: 40rem;
+    width: 100%;
+    height: 650px;
     display: flex;
    
     
 
 }
 
-.container1 {
-    margin-left: 15px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    height: 441px;
-    position: relative;
+.carrocel h1{
     text-align: center;
-    
-    
-}
-
-.container1 h1{
-
-    color: #00a7ef;
-    position: absolute;
-    left: 60px;
-    z-index: 10;
-    display: flex;
-    width: 273px;
-    height: 43px;
+    color:#00A7EF;
+    font-weight: 500;
     font-size: 30px;
-    font-weight: bold;
-    
-
+    margin-bottom: 80px;
+    margin-top: 50px;
 }
 
-.casasBH {
-    background-color: #EAEAEA;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 85px;
-    left: 20px;
-    width: 131px;
-    height: 116px;
+.slider {
+    width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: grab;
+    margin-bottom: 80px;
+}
+
+.clientes {
     display: flex;
-    box-shadow: offset-y;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center
-    
-    
+    transition: transform 1s ease-in-out;
+    gap: 17%;
 }
 
-.casasBH img{
-    width: 91px;
-    height: 68px;
-    display: flex;
-    justify-content: center;
-    text-align:center
-    
+.clientes img {
+    width: 60px; 
+    height: 60px; 
+    flex-shrink: 0;
+    max-width: 100%;
+    object-fit: contain; 
+    cursor: pointer;
 }
 
-.cruzeiro {
-    background-color: #EAEAEA;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 85px;
-    left: 195px;
-    width: 131px;
-    height: 116px;
-    display: flex;
-    box-shadow: offset-y;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center
-}
-
-.cruzeiro img{
-    width: 50px;
-    height: 50px;
-    border: none;
-    background: none;
-    object-fit: contain;
-
-
-}
-
-.ipanema {
-    background-color: #EAEAEA;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 250px;
-    left: 20px;
-    width: 131px;
-    height: 116px;
-    display: flex;
-    box-shadow: offset-y;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center
-}
-
-.ipanema img{
-    width: 120px;
-    height: 30px;
-    border: none;
-    background: none;
-    object-fit: contain;
-
-}
-
-.claro {
-    background-color: #EAEAEA;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 250px;
-    left: 195px;
-    width: 131px;
-    height: 116px;
-    display: flex;
-    box-shadow: offset-y;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center
-}
-
-.claro img{
-    display: flex;
-    width: 83px;
-    height: 34px;
-    border: none;
-    background: none;
-    object-fit: contain;
-
+.clientes img.selected {
+    transform: scale(1.2); 
+    border: 2px solid #007bff;
 }
 
 /* aqui finaliza o primeiro container
    Iniciando segundo container */
    .H1sobre{
 
-    margin-left: 32%;
+    text-align: center;
     font-weight: 500;
     
     font-size: 30px;
@@ -397,6 +328,10 @@ button.active .iconify {
     padding: 25px;
     display: flex;
     font-weight: 400;
+    margin-right: 20px;
+    position: absolute;
+    left: 10px;
+    margin-bottom: 20px;
    
     
     
@@ -407,9 +342,10 @@ button.active .iconify {
 
     font-size: 14px;
     text-align: justify;
-    margin-left: 25px;
+    margin-left: 30px;
     color: black;
     font-weight: bold;
+    padding-top: 30%;
    }
 
    .container4 img{
@@ -745,6 +681,10 @@ button.active .iconify {
 
 @media (min-width: 750px) {
 
+    .header-mobile nav{
+        display: none;
+    }
+
     .containerbotao{
         display: flex;
         gap: 10%;
@@ -976,101 +916,62 @@ button.active .iconify {
     width: 543px;
     height: 78px;
     font-weight: bold;
-    
-
    }
+
+
+   .carrocel h1{
+    text-align: center;
+    color:#00A7EF;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.slider {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: grab;
+    margin-bottom: 80px;
    
-   .casasBH { 
-    position: absolute;
-    top: 250px;
-    left: 7.5%;
-    width: 170px;
-    height: 170px;
+}
+
+.clientes {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    gap: 17%;
+}
+
+.clientes img {
+    width: 60px;
+    height: 60px; 
+    flex-shrink: 0;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
     cursor: pointer;
-    
-    
-        
-    }
+}
 
-    .casasBH img{
-        object-fit: contain;
+.clientes img:hover{
+    transform: scale(1.1);
 
-        width: 75%;
-        height: auto;
-        
-        
-    }
+}
 
-    .cruzeiro {
-     
-        top: 250px;
-        left: 28.5%;
-        width: 170px;
-        height: 170px;
-        cursor: pointer;
-      
-    
-    }
+.clientes img.selected {
+    transform: scale(1.2); 
+    border: 2px solid #007bff; 
+}
 
-    .cruzeiro img{
-        object-fit: contain;
-
-        width: 75%;
-        height: auto;
-
+   
     
 
-
-    }
-
-    .ipanema {
-        position: absolute;
-        top: 250px;
-        left: 51%;
-        width: 170px;
-        height: 170px;
-        display: flex;
-        cursor: pointer;
-    
-    
-        
-    }
-
-    .ipanema img{
-        object-fit: contain;
-
-        width: 75%;
-        height: auto;
-
-    
-
-    }
-
-    .claro {
-    
-        position: absolute;
-        top: 250px;
-        left: 74%;
-        width: 170px;
-        height: 170px;
-        cursor: pointer;
-    
-    }
-
-    .claro img{
-        
-        object-fit: contain;
-
-        width: 75%;
-        height: auto;
-
-    
-
-    }
+   
 
     .H1sobre{
 
-        margin-left: 40%;
+        
+        text-align: center;
         
         font-size: 35px;
         color: #00A7EF;
@@ -1309,6 +1210,182 @@ button.active .iconify {
         
         
        }
+
+       .botaoapp{
+        display: block;
+    }
+
+
+
+       
+
+
+       .botaoapp img{
+        height: 50px;
+        position: absolute;
+        position: fixed;
+        z-index: 800;
+        right: 0px;
+        top: 600px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        
+        
+       }
+
+       .botaoapp img:hover{
+        transform: scale(1.2);
+       }
+
+       .tooltip {
+        position: fixed; /* Mantém a tooltip em relação ao botão */
+        z-index: 955;
+        top: 79.5%; /* Alinha verticalmente no meio da imagem */
+        left: 83%; /* Coloca a tooltip à esquerda do botão */
+        transform: translateY(-50%); /* Centraliza verticalmente */
+        background-color: #25D366; /* Cor do fundo da mensagem */
+        color: white; /* Cor do texto */
+        padding: 5px 10px; /* Espaçamento interno */
+        border-radius: 5px;
+        font-size: 14px;
+        white-space: nowrap; /* Impede a quebra de linha */
+        visibility: hidden; /* Inicialmente escondido */
+        opacity: 0; /* Inicialmente invisível */
+        transition: visibility 0s, opacity 0.3s ease-in-out; /* Transição suave */
+    }
+    
+    /* Exibe a mensagem ao passar o mouse sobre o botão */
+    .botaoapp:hover .tooltip {
+        visibility: visible;
+        opacity: 1; /* Torna a mensagem visível */
+    }
+    /* Exibe a mensagem ao passar o mouse sobre o botão */
+   
+    
+
+
+    
+
+      
+
+       #chatbox {
+        position: fixed; /* Fixando o chatbox na tela */
+        top: 360px;
+        right: 40px;
+        z-index: 700;
+        width: 260px; /* Diminuindo a largura do chatbox */
+        height: 400px; /* Altura do chatbox */
+        border-radius: 10px;
+        background-color: white;
+        background-image: url('https://img.freepik.com/vetores-premium/desenvolvimento-de-negocios-doodles-objetos-desenho-de-fundo-a-mao_116849-1953.jpg?w=1060');
+        background-size: 30% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        transition: opacity 0.2s ease-in-out;
+    }
+    
+    #chatHeader {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px; /* Ajuste para garantir o espaço adequado no header */
+        background-color: #25D366; /* Cor do WhatsApp */
+        color: white;
+        border-radius: 10px 10px 0 0; /* Bordas arredondadas no topo */
+        border-bottom: 1px solid #128C7E; /* Linha abaixo */
+        margin: 0; /* Remover qualquer margem */
+    }
+
+    #closeChatBtn {
+        
+        margin-top: 13px;
+        margin-right:  10px; /* Alinha o botão "X" à direita */
+        transform: translateY(-50%); /* Centraliza verticalmente */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    
+    
+    #profileImage {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    #chatName {
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        flex-grow: 1;
+    }
+    
+    #messages {
+        flex: 1;
+        padding: 10px;
+        overflow-y: auto; /* Permitir rolagem apenas nas mensagens */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .message {
+        margin: 5px 0;
+        padding: 8px;
+        border-radius: 10px;
+        max-width: 80%;
+        font-size: 14px;
+    }
+    
+    .message.user {
+        align-self: flex-end;
+        background-color: #dcf8c6;
+    }
+    
+    .message.bot {
+        align-self: flex-start;
+        background-color: #f1f1f1;
+    }
+    
+    #inputContainer {
+        display: flex;
+        padding: 5px;
+        background-color: #f1f1f1;
+        border-top: 1px solid #ddd;
+    }
+    
+    #userInput {
+        flex: 1;
+        padding: 6px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 12px;
+        outline: none;
+    }
+    
+    .enviar {
+        padding: 6px 8px;
+        border: none;
+        background-color: #25D366;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    
+    .enviar:hover {
+        background-color: #128C7E;
+    }
+    
+
+       
 
       
 

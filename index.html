@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -74,27 +75,31 @@
 
     </div>
 
-    <div class="container1">
+    <div class="carrocel">
         
         <h1>Nossos parceiros</h1>
 
-        <div class="casasBH">
-            <img src="./imagens/casasBH.png" alt="imagem casas bahia">
+
+        <div class="slider">
+            <div class="clientes">
+                <img src="./imagens/casasBH.png" alt="foto casas bahia">
+                <img src="./imagens/cruzeiro.jpg" alt="foto cruzeiro do sul">
+                <img src="./imagens/ipanema.png" alt="foto ipanema">
+                <img src="./imagens/claro.jpg" alt="foto claro">
+                <img src="./imagens/casasBH.png" alt="foto via varejo">
+                <img src="./imagens/casasBH.png" alt="foto casas bahia">
+                <img src="./imagens/cruzeiro.jpg" alt="foto cruzeiro do sul">
+                <img src="./imagens/ipanema.png" alt="foto ipanema">
+                <img src="./imagens/claro.jpg" alt="foto claro">
+                <img src="./imagens/casasBH.png" alt="foto via varejo">
+            </div>
+        </div>
+
+
             
         </div>
 
-        <div class="cruzeiro">
-            <img src="./imagens/cruzeiro.jpg" alt="imagem cruzeiro">
-        </div>
-        
-        <div class="ipanema">
-            <img src="./imagens/ipanema.png" alt="foto ipanema">
-        </div>
-
-        <div class="claro">
-            <img src="./imagens/claro.jpg" alt="foto claro">
-        </div>
-    </div><!--div CONTAINER1 (NOSSOS PARCEIROS FINALIZA AQUI)-->
+        <!--div CONTAINER1 (NOSSOS PARCEIROS FINALIZA AQUI)-->
 
     <h1 class="H1sobre">Sobre nós</h1>
     
@@ -140,7 +145,7 @@
 
     <div class="container4">
         <h1>
-            Vem ser um <br>#Talento
+            Venha ser um <br>#Talento
         </h1>
 
         <p>
@@ -190,7 +195,43 @@
 
         
 
-    </div><!--div CONTAIENER4 (FORMULARIO, FINALIZA AQUI)-->
+    </div><!--div CONTAIENER4 (FORMULARIO, FINALIZA AQUI) -->
+
+
+    <div class="whatsaap">
+        
+        
+        <button class="botaoapp">
+            
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 50px; height: 50px;">
+            <span class="tooltip">Fale com Miguel</span>
+        </button>
+        <div id="chatbox">
+            <!-- Cabeçalho do chat -->
+            <div id="chatHeader">
+                <img src=" https://img.freepik.com/psd-gratuitas/personagem-3d-com-oculos-e-fone-de-ouvido-em-fundo-azul-e-transparente_393336-599.jpg?semt=ais_hybrid" alt="Foto do Perfil" id="profileImage"> <!-- Foto de perfil -->
+                <span id="chatName">Miguel</span> <!-- Nome do bot ou usuário -->
+                <button id="closeChatBtn" onclick="closeChat()">X</button>
+            </div>
+            <div id="messages"></div>
+            <div id="inputContainer">
+                <input type="text" id="userInput" placeholder="Digite sua mensagem..." onkeypress="handleKeyPress(event)" />
+                <button class="enviar" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i> <!-- Ícone da seta do WhatsApp -->
+                </button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    
+
+
+    
+
+
+
 
 
     <div class="container6">
@@ -272,23 +313,10 @@
 
 
     </div>
-    
-    
-
-
-
-
-
-
-
-
 
     
-
-
-
-
-
+    
+    
 
 
 </body>

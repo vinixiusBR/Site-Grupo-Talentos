@@ -95,13 +95,15 @@
 
 .header-mobile nav{
    
+    
     background-color: #ffffff;
     position: absolute;
     top: 90px;
     left: -250px;
     width: 70%;
     height: 115vh;
-    transition: left 0.3s ease;
+    transition: left 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    opacity: 0;
 
 
 }
@@ -128,7 +130,7 @@
 }
 
 nav.show {
-    transition: left 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    left: 0;
     opacity: 1;
 }
 
@@ -414,6 +416,7 @@ h5{
     margin-bottom: 1vh;
     border: 0;
     border-top: 1px solid #00A7EF;
+    height: 2px;
     
 }
 
@@ -662,6 +665,10 @@ h5{
     width: 100%;
 }
 
+.trabalhe img{
+    display: none;
+}
+
 
 
 
@@ -832,6 +839,11 @@ h5{
    
 
 @media (min-width: 750px) {
+    
+    .header-mobile nav{
+
+        display: none;
+    }
 
         .containerbotao{
             display: flex;
@@ -913,8 +925,9 @@ h5{
         
         .paragrafos{
             all: unset;
+            text-align: left;
             
-            font-size: 18px;
+            font-size: 17.5px;
             margin-left: 7%;
             margin-right: 50%;
             margin-top: 11%;
@@ -1223,6 +1236,7 @@ h5{
             position: absolute;
             top: 3vh;
             left: 3vh;
+            size: 50px;
         
         
         }
@@ -1389,6 +1403,17 @@ h5{
             font-size: 18px;
             height: 100%;
             width: 100%;
+        }
+
+        .trabalhe img{
+            display: block;
+            position: absolute;
+            width: 40%;
+            height: auto;
+            right: 60px;
+            margin-top: 20%;
+            padding: auto;
+
         }
 
 

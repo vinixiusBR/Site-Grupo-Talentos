@@ -417,6 +417,11 @@ h1{
    @media (min-width: 750px){
 
 
+    .header-mobile nav{
+        display: none;
+    }
+
+
 
     .containergeral{
 
@@ -433,6 +438,7 @@ h1{
         height: 64%;
         left: 55%;
         top: 38%;
+        transition: opacity 0.5s ease, display 0s 0.5s;
         
     
     }
