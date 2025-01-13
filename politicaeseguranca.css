@@ -555,6 +555,7 @@ h1{
     #inicio, #trabalhe{
         display: block;
         background-color: #ffffff;
+        border: none;
         border-color: #00A7EF;
         border-radius: 15px;
         color: #00A7EF;
@@ -633,9 +634,9 @@ h1{
     
        .container6 img{
         all: unset;
-        width: 130px;
+        width: 95px;
         height: 60px;
-        margin-left: 4%;
+        margin-left: 6%;
         
        
         

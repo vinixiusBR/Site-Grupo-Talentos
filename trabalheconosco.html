@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link id="favicon" rel="icon" href="./imagens/favconclaro.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -23,7 +24,7 @@
 
     <header class="header-mobile">
 
-        <img src="./imagens/GrupoTalentosLogo2.jpeg" alt="logo">
+        <img src="./imagens/logotalentos.png" alt="logo">
 
 
 
@@ -67,7 +68,14 @@
 
     <div id="overlay" class="overlay"></div>
 
-    <img class="primeirafoto" src="./imagens/trabalheconosco.jpg" alt="foto Trabalhe conosco">
+    <img 
+    src="./imagens/trabalheconosco.png" 
+    alt="Imagem Trabalhe Conosco"
+    srcset="
+        ./imagens/trabalheconosco.png 1800w, 
+        ./imagens/trabalheconoscomobile.png 600w"
+    sizes="(max-width: 600px) 100vw, (min-width: 601px) 1024px">
+
     
 
     <div class="container1">
@@ -100,7 +108,7 @@
 
         </button>
 
-        <img class="segundafoto " src="imagens/imagemtime.jpg" alt="foto de time de trabalho">
+        <img class="segundafoto " src="./imagens/maosdadas.jpg" alt="foto de time de trabalho">
 
     </div>
 
@@ -244,7 +252,15 @@
     </div>
 
 
-    <img class="fotofinal" src="./imagens/fotoequipe.jpg" alt="Foto de equipe">
+    <img 
+    src="./imagens/convitetime.png" 
+    alt="Imagem Convite para o Time"
+    srcset="
+        ./imagens/convitetime.png 1024w, 
+        ./imagens/convitemobile.png 600w"
+    sizes="(max-width: 600px) 100vw, (min-width: 601px) 650px"
+    class="responsive-img">
+
 
     <div class="trabalhe">
 
@@ -275,7 +291,7 @@
         </button>
 
 
-        <img src="./imagens/fototrabalhe.jpg" alt="foto do trabalhe">
+        <!--<img src="./imagens/fototrabalhe.png" alt="foto do trabalhe">-->
 
 
 
@@ -290,7 +306,7 @@
     <div class="container6">
         <footer>
 
-            <img class="imagempe" src="./imagens/GrupoTalentosLogo2.jpeg" alt="Logo da empresa">
+            <img class="imagempe" src="./imagens/logobranco.png" alt="Logo da empresa">
 
             <div class="containerlinks">
                 

@@ -18,6 +18,10 @@
 
 body{
     position: relative;
+    width: 100%;
+    max-width: 1200px; /* Defina um valor máximo, como 1200px */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    overflow-x: hidden; /* Impede o conteúdo de transbordar horizontalmente */
    
 
     
@@ -126,7 +130,7 @@ body{
 .header-mobile nav{
    
     
-    background-color: #ffffff;
+    background-color: #ffffff; 
     position: absolute;
     top: 90px;
     left: -250px;
@@ -186,12 +190,17 @@ button.active .iconify {
 }
 
 .carrocel h1{
-    text-align: center;
+    text-align:center;
     color:#00A7EF;
-    font-weight: 500;
-    font-size: 30px;
-    margin-bottom: 80px;
-    margin-top: 50px;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 60px;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+    
 }
 
 .slider {
@@ -205,7 +214,8 @@ button.active .iconify {
 .clientes {
     display: flex;
     transition: transform 1s ease-in-out;
-    gap: 17%;
+    gap: 15%;
+    margin-left: 50px;
 }
 
 .clientes img {
@@ -221,6 +231,26 @@ button.active .iconify {
     transform: scale(1.2); 
     border: 2px solid #007bff;
 }
+
+
+
+.slidebox{
+    
+        position: relative;
+        
+    }
+
+    .fimslide{
+        position: absolute;
+        background-color: #ffffff;
+        color: #ffffff;
+        height: 50px;
+        width: 100%;
+        top:96%;
+        z-index: 300;
+        border-top-left-radius: 22px; /* Canto superior esquerdo */
+        border-top-right-radius: 22px;/*o superior direito */
+    }
 
 /* aqui finaliza o primeiro container
    Iniciando segundo container */
@@ -679,7 +709,68 @@ button.active .iconify {
         
    }
 
+
+
+   .sliderfotos {
+    position: relative;
+    max-width: 100%;
+    height: auto; /* Ajuste de altura para telas menores */
+    margin: auto;
+    overflow: hidden;
+}
+
+.sliderradio {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.sliderradio img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+}
+
+/* Estilo dos indicadores (bolinhas) */
+.dots {
+    display: none;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #f2f2f2;
+    transform: scale(1.2);
+}
+
+.active {
+    background-color: #fff;
+    transform: scale(1.3);
+}
+
+
+
 @media (min-width: 750px) {
+
+    
 
     .header-mobile nav{
         display: none;
@@ -693,6 +784,7 @@ button.active .iconify {
     
     #inicio, #trabalhe{
         display: block;
+        border: none;
         background-color: #ffffff;
         border-color: #00A7EF;
         border-radius: 15px;
@@ -782,9 +874,9 @@ button.active .iconify {
     
        .container6 img{
         all: unset;
-        width: 130px;
+        width: 95px;
         height: 60px;
-        margin-left: 4%;
+        margin-left: 6%;
         
        
         
@@ -892,13 +984,90 @@ button.active .iconify {
         
     }
 
-    .foto-principal{
-        max-width: 100%;
-        height: 40rem;
-        display: flex;
-       
 
+    .sliderfotos {
+        position: relative;
+        width:  100%;
+        height: 650px;
+        max-height: 80vh;
+        margin: auto;
+        overflow: hidden; /* Esconde as imagens fora da área do slider */
     }
+    .slidebox{
+    
+        position: relative;
+        
+    }
+
+    .fimslide{
+        position: absolute;
+        background-color: #ffffff;
+        color: #ffffff;
+        height: 70px;
+        width: 100%;
+        top: 92%;
+        z-index: 800;
+        border-top-left-radius: 30px;   /* Canto superior esquerdo */
+        border-top-right-radius: 30px;  /* Canto superior direito */
+    }
+    
+    .sliderradio {
+        display: flex;
+        transition: transform 0.5s ease-in-out; /* Transição suave */
+    }
+    
+    .slide {
+        min-width: 100%; /* Faz com que cada slide ocupe toda a área visível */
+        box-sizing: border-box;
+    }
+
+    .sliderradio img {
+        width: 100%;
+        height: auto;
+        object-fit: cover /* Garante que a imagem se ajuste sem distorcer */
+    }
+
+    
+  
+    
+    /* Estilo dos indicadores (bolinhas) */
+    /* Estilo dos indicadores (bolinhas) */
+.dots {
+    display: block;
+    text-align: center; /* Centraliza os indicadores */
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    z-index: 992; /* Garante que os indicadores fiquem visíveis acima dos slides */
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 8px;
+    background-color: rgba(255, 255, 255, 0.7); /* Cor das bolinhas inativas */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição suave */
+    cursor: pointer;
+}
+
+/* Quando o mouse passa sobre as bolinhas */
+.dot:hover {
+    background-color: #f2f2f2;
+    transform: scale(1.2); /* Aumenta o tamanho da bolinha ao passar o mouse */
+}
+
+/* Bolinha ativa */
+.active {
+    background-color: #fff; /* Cor das bolinhas ativas */
+    transform: scale(1.3); /* Aumenta a bolinha ativa para destacá-la */
+}
+
+
+
+
+   
     .container1{
         display: flex;
         gap: 10px;
@@ -919,13 +1088,15 @@ button.active .iconify {
    }
 
 
-   .carrocel h1{
-    text-align: center;
-    color:#00A7EF;
-    font-weight: 500;
-    font-size: 35px;
-    margin-bottom: 70px;
-    margin-top: 70px;
+   .carrocel h1 {
+    text-align:center;
+    color: #00A7EF;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 8%;
+    margin-top: 0px;
+    margin-right: 8px;
+    margin-left: 8px;
 }
 
 .slider {
@@ -934,34 +1105,34 @@ button.active .iconify {
     overflow: hidden;
     cursor: grab;
     margin-bottom: 80px;
-   
 }
 
 .clientes {
     display: flex;
-    transition: transform 1s ease-in-out;
-    gap: 17%;
+    transition: transform 0.4s ease-in-out; 
+    gap: 12%;
 }
 
 .clientes img {
-    width: 60px;
-    height: 60px; 
+    width: 70px;
+    height: 70px;
     flex-shrink: 0;
     max-width: 100%;
     object-fit: contain;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
     cursor: pointer;
 }
 
-.clientes img:hover{
+.clientes img:hover {
     transform: scale(1.1);
-
 }
 
 .clientes img.selected {
-    transform: scale(1.2); 
-    border: 2px solid #007bff; 
+    transform: scale(1.2);
+    border: 2px solid #007bff;
 }
+
+
 
    
     
@@ -1211,8 +1382,30 @@ button.active .iconify {
         
        }
 
+
+       
+
        .botaoapp{
         display: block;
+    }
+
+
+    .darkOverlay {
+        display: none; /* Inicialmente invisível */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #3534348f; /* Cor escura com transparência */
+        z-index: 900; /* Coloca o overlay abaixo do botão */
+        transition: opacity 0.3s ease;
+        opacity: 0; /* Inicialmente invisível */
+    }
+    
+    .darkOverlay.active {
+        display: block;
+        opacity: 1; /* Torna o fundo visível */
     }
 
 
@@ -1221,17 +1414,22 @@ button.active .iconify {
 
 
        .botaoapp img{
-        height: 50px;
+        width: 9%;
+        height: auto;
         position: absolute;
         position: fixed;
-        z-index: 800;
-        right: 0px;
-        top: 600px;
+        z-index: 850;
+        right: 15px;
+        top: 90%;
         cursor: pointer;
-        transition: all 0.2s ease;
+        transition: all 0.2s ease; 
+        
+
         
         
        }
+
+       
 
        .botaoapp img:hover{
         transform: scale(1.2);
@@ -1240,8 +1438,8 @@ button.active .iconify {
        .tooltip {
         position: fixed; /* Mantém a tooltip em relação ao botão */
         z-index: 955;
-        top: 79.5%; /* Alinha verticalmente no meio da imagem */
-        left: 83%; /* Coloca a tooltip à esquerda do botão */
+        top: 94%; /* Alinha verticalmente no meio da imagem */
+        left: 80%; /* Coloca a tooltip à esquerda do botão */
         transform: translateY(-50%); /* Centraliza verticalmente */
         background-color: #25D366; /* Cor do fundo da mensagem */
         color: white; /* Cor do texto */
@@ -1270,11 +1468,11 @@ button.active .iconify {
 
        #chatbox {
         position: fixed; /* Fixando o chatbox na tela */
-        top: 360px;
-        right: 40px;
-        z-index: 700;
-        width: 260px; /* Diminuindo a largura do chatbox */
-        height: 400px; /* Altura do chatbox */
+        top: 155px;
+        right: 30px;
+        z-index: 980;
+        width: 300px; /* Diminuindo a largura do chatbox */
+        height: 600px; /* Altura do chatbox */
         border-radius: 10px;
         background-color: white;
         background-image: url('https://img.freepik.com/vetores-premium/desenvolvimento-de-negocios-doodles-objetos-desenho-de-fundo-a-mao_116849-1953.jpg?w=1060');
@@ -1290,9 +1488,10 @@ button.active .iconify {
     
     #chatHeader {
         display: flex;
+        height: 60px;
         align-items: center;
         padding: 5px 10px; /* Ajuste para garantir o espaço adequado no header */
-        background-color: #25D366; /* Cor do WhatsApp */
+        background-color: #00A7EF; /* Cor do WhatsApp */
         color: white;
         border-radius: 10px 10px 0 0; /* Bordas arredondadas no topo */
         border-bottom: 1px solid #128C7E; /* Linha abaixo */
@@ -1300,28 +1499,50 @@ button.active .iconify {
     }
 
     #closeChatBtn {
-        
-        margin-top: 13px;
-        margin-right:  10px; /* Alinha o botão "X" à direita */
+        margin-top: 40px;
+        margin-right: 5px; /* Alinha o botão "X" à direita */
         transform: translateY(-50%); /* Centraliza verticalmente */
         background: none;
         border: none;
         color: white;
         font-size: 15px;
         cursor: pointer;
+        transition: all 0.3s ease; /* Adiciona transição suave */
+        
+        width: 40px; /* Define a largura do botão */
+        height: 40px; /* Define a altura do botão */
+        display: flex; /* Flexbox para garantir o alinhamento */
+        justify-content: center; /* Alinha o conteúdo (texto) no centro */
+        align-items: center; /* Alinha o conteúdo (texto) no centro */
+        border-radius: 50%; /* Garante que o botão seja circular */
     }
+    
+    /* Efeito ao passar o mouse sobre o botão */
+    #closeChatBtn:hover {
+        color: #ffffff; /* Mantém a cor do texto como branco */
+        background-color: #00A7EF; /* Altera o fundo para uma cor escura ao passar o mouse */
+        /* Aumenta o botão suavemente */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+        
+        /* Impede o movimento do botão, fixando o ponto de origem da transformação */
+        transform-origin: center; /* O botão vai aumentar a partir de seu centro */
+    }
+    
+    
+
+    
 
     
     
     #profileImage {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         margin-right: 10px;
     }
     
     #chatName {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: bold;
         color: white;
         flex-grow: 1;
@@ -1340,7 +1561,7 @@ button.active .iconify {
         padding: 8px;
         border-radius: 10px;
         max-width: 80%;
-        font-size: 14px;
+        font-size: 14.5px;
     }
     
     .message.user {
@@ -1356,6 +1577,7 @@ button.active .iconify {
     #inputContainer {
         display: flex;
         padding: 5px;
+        height: 45px;
         background-color: #f1f1f1;
         border-top: 1px solid #ddd;
     }
@@ -1366,22 +1588,22 @@ button.active .iconify {
         border: none;
         border-radius: 5px;
         margin-right: 5px;
-        font-size: 12px;
+        font-size: 14px;
         outline: none;
     }
     
     .enviar {
         padding: 6px 8px;
         border: none;
-        background-color: #25D366;
+        background-color: #00A7EF;
         color: white;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .enviar:hover {
-        background-color: #128C7E;
+        background-color: #12708c;
     }
     
 
